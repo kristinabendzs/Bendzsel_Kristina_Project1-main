@@ -2,29 +2,79 @@
     display: none;
 }
 
+/*Fonts information*/
 .plus-jakarta-font {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 600;
     font-style: normal;
+    line-height: 20px;
+    font-size: 12px;
 }
 
-.montserrat-font {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal
+.prompt-semibold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+#highlight-text1 {
+    color: rgb(255, 119, 0);
+    font-weight: 800;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px black;
 }
 
+.highlight-text2 {
+    color: rgb(255, 119, 0);
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+    font-size: 14px;
+}
+
+#highlight-text2 {
+    color:rgb(7, 0, 89);
+    font-weight: 800;
+    font-size: 26px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#flavours-container {
+    font-size: 36px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 1px black;
+    line-height: 30px;
+    text-align: center;
+}
+
+#flavour-text1 {
+    color: rgb(243, 255, 72);
+    font-weight: 800;
+}
+
+#flavour-text2 {
+    color: rgb(138, 0, 113);
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
+#flavour-text3 {
+    color: rgb(255, 140, 0);
+    font-weight: 800;
+}
+
+/*Container info & divs*/
 #container {
     width: 428px;
     margin: 20px auto;
     border: solid 1px #333;
-    background-color: rgb(255, 155, 79);
+    background-color: rgb(255, 218, 199);
     border-radius: 10px;
 }
 
-#main-content {
+#main-container {
     display: grid;
     grid-template-columns: repeat(4, 85px);
     grid-column-gap: 16px;
@@ -36,30 +86,47 @@ article {
     grid-column: 1/-1; 
 }
 
-section {
-    margin: 20px 20px;
+div {
+    margin: 15px 15px;
+    padding-top: 15px;
 }
 
+/*Title*/
 #quench-title {
     background-image: url(../images/quench-title-background1.jpg);
     background-size: cover;
     opacity: 0.9;
-    width: 400px;
+    width: 380px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     margin-top: 14px;
-    border: solid 5px rgb(15, 79, 131);
+    border: solid 4px rgb(255, 119, 0);
 }
 
 #quench-title h2 {
-    color: orange;
+    color: rgb(255, 119, 0);
     font-style: italic;
     font-size: 76px;
     text-shadow: 5px 5px 2px black;
 }
 
+/*End text box*/
+#end-text {
+    background-color: rgb(255, 119, 0);
+    padding-top: 0;
+    padding: 7px;
+    border-radius: 10px;
+    border: solid 4px rgb(7, 0, 89);
+}
 
+#end-text p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    font-style: italic;
+    color: rgb(7, 0, 89);
 
+}
